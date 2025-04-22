@@ -2,23 +2,30 @@ using UnityEngine;
 
 public class Cherry : MonoBehaviour
 {
-    public AudioClip collectSound; // 收集音效
-    
+    [Header("Effects")]
+    public AudioClip collectSound;
+    public ParticleSystem collectEffect;
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Dog"))
         {
-            // 播放收集音效
-            if (collectSound != null)
-            {
-                AudioSource.PlayClipAtPoint(collectSound, transform.position);
-            }
-            
-            // 通知GameManager收集了一个Cherry
-            GameManager.Instance.CollectCherry();
-            
-            // 销毁Cherry
-            Destroy(gameObject);
+            Collect();
         }
+    }
+
+    private void Collect()
+    {
+        // 播放效果
+        if (collectSound != null)
+            AudioSource.PlayClipAtPoint(collectSound, transform.position);
+        
+        if (collectEffect != null)
+            Instantiate(collectEffect, transform.position, Quaternion.identity);
+
+        // 通知 GameManager
+        GameManager.Instance?.CollectCherry(); // 安全调用
+        
+        Destroy(gameObject);
     }
 }
