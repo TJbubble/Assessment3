@@ -1,5 +1,9 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/Page3.unity
+=======
+- path: Assets/Scenes/Page1.unity
+>>>>>>> 17d930054fd1d766226798be3481e5f840cfa794
   isLoaded: 1
   isActive: 1
   isSubScene: 0
