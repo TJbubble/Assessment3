@@ -13,11 +13,30 @@ public class DeerController : MonoBehaviour
         rb = GetComponent<Rigidbody>();
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Cherry"))
+        {
+            Destroy(other.gameObject);
+
+            // 更安全的调用方式
+            var gameManager = FindObjectOfType<GameManager>();
+            if (gameManager != null)
+            {
+                gameManager.CollectCherry();
+            }
+            else
+            {
+                Debug.LogError("GameManager not found in scene!");
+            }
+        }
+    }
+
     void Update()
     {
         // 获取键盘输入
-        float moveInput = Input.GetAxis("Vertical"); // W/S或上/下箭头
-        float turnInput = Input.GetAxis("Horizontal"); // A/D或左/右箭头
+        float moveInput = Input.GetAxis("Vertical");
+        float turnInput = Input.GetAxis("Horizontal");
 
         // 移动控制
         Vector3 movement = transform.forward * moveInput * moveSpeed * Time.deltaTime;
@@ -27,11 +46,5 @@ public class DeerController : MonoBehaviour
         float rotation = turnInput * rotationSpeed * Time.deltaTime;
         Quaternion turnRotation = Quaternion.Euler(0f, rotation, 0f);
         rb.MoveRotation(rb.rotation * turnRotation);
-
-        // 简单动画控制（可选）
-        if (moveInput != 0)
-        {
-            // 这里可以添加跑步动画触发
-        }
     }
 }
