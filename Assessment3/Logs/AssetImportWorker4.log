@@ -1,0 +1,334 @@
+Using pre-set license
+Built from '2021.3/china_unity/release' branch; Version is '2021.3.18f1c1 (93698379025b) revision 9660803'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.26100) 64bit CoreCountrySpecific' Language: 'zh' Physical Memory: 15587 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.3.18f1c1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker4
+-projectPath
+D:/Assessment3/Assessment3
+-logFile
+Logs/AssetImportWorker4.log
+-srvPort
+49983
+Successfully changed project path to: D:/Assessment3/Assessment3
+D:/Assessment3/Assessment3
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [29184] Host "[IP] 192.168.0.105 [Port] 0 [Flags] 2 [Guid] 2533659706 [EditorId] 2533659706 [Version] 1048832 [Id] WindowsEditor(7,ÕÅ¾þÒÙ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [29184] Host "[IP] 192.168.0.105 [Port] 0 [Flags] 2 [Guid] 2533659706 [EditorId] 2533659706 [Version] 1048832 [Id] WindowsEditor(7,ÕÅ¾þÒÙ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+AS: AutoStreaming module initializing.
+Refreshing native plugins compatible for Editor in 103.30 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.18f1c1 (93698379025b)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.18f1c1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/Assessment3/Assessment3/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 4060 Laptop GPU (ID=0x28e0)
+    Vendor:   NVIDIA
+    VRAM:     7957 MB
+    Driver:   32.0.15.5597
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.18f1c1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.18f1c1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.18f1c1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56180
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.18f1c1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.18f1c1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.008288 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 61.52 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.475 seconds
+Domain Reload Profiling:
+	ReloadAssembly (476ms)
+		BeginReloadAssembly (65ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (316ms)
+			LoadAssemblies (59ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (70ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (20ms)
+			SetupLoadedEditorAssemblies (184ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (62ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (80ms)
+				ProcessInitializeOnLoadMethodAttributes (33ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.009822 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\Assessment3\Assessment3\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\Assessment3\Assessment3\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.64 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.781 seconds
+Domain Reload Profiling:
+	ReloadAssembly (781ms)
+		BeginReloadAssembly (89ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (17ms)
+		EndReloadAssembly (596ms)
+			LoadAssemblies (66ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (188ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (37ms)
+			SetupLoadedEditorAssemblies (273ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (72ms)
+				ProcessInitializeOnLoadAttributes (159ms)
+				ProcessInitializeOnLoadMethodAttributes (14ms)
+				AfterProcessingInitializeOnLoad (20ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 0.55 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3231 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 24 unused Assets / (439.6 KB). Loaded Objects now: 3714.
+Memory consumption went from 151.7 MB to 151.3 MB.
+Total: 2.680600 ms (FindLiveObjects: 0.207300 ms CreateObjectMapping: 0.066700 ms MarkObjects: 2.199900 ms  DeleteObjects: 0.204600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1117.111191 seconds.
+  path: Assets/Traint/Free Casual Buttons Pack/Sprites/005 Yellow/Button 001.png
+  artifactKey: Guid(7db34d6bb4a9bee47b715a74b0ea5aac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Traint/Free Casual Buttons Pack/Sprites/005 Yellow/Button 001.png using Guid(7db34d6bb4a9bee47b715a74b0ea5aac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8be4ee28a3ee47508beafd4e0df3a20') in 0.111344 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Traint/Free Casual Buttons Pack/Sprites/005 Yellow/Button 022.png
+  artifactKey: Guid(3326523f843273f4c811ef9e1c1139c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Traint/Free Casual Buttons Pack/Sprites/005 Yellow/Button 022.png using Guid(3326523f843273f4c811ef9e1c1139c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7158131738d04d3e43df9b45664ab1d8') in 0.024927 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Traint/Free Casual Buttons Pack/Sprites/005 Yellow/Button 017.png
+  artifactKey: Guid(9e55ca6acba4e9e40a7fea9e6556a375) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Traint/Free Casual Buttons Pack/Sprites/005 Yellow/Button 017.png using Guid(9e55ca6acba4e9e40a7fea9e6556a375) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82e05ca660509deb9fff991cbd1e367c') in 0.023676 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.520666 seconds.
+  path: Assets/Traint/Free Casual Buttons Pack/Sprites/006 Light Yellow/Button 001.png
+  artifactKey: Guid(621b653840fc876429982f3bce4dc12d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Traint/Free Casual Buttons Pack/Sprites/006 Light Yellow/Button 001.png using Guid(621b653840fc876429982f3bce4dc12d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f49c90832cd9d1f4b87cc87dab419b60') in 0.019566 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Traint/Free Casual Buttons Pack/Sprites/006 Light Yellow/Button 013.png
+  artifactKey: Guid(b48b44afec3c6c840a38cf2d0c8b67a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Traint/Free Casual Buttons Pack/Sprites/006 Light Yellow/Button 013.png using Guid(b48b44afec3c6c840a38cf2d0c8b67a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ea582f67a7137b192f4813ddcb384a1') in 0.022704 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Traint/Free Casual Buttons Pack/Sprites/006 Light Yellow/Button 009.png
+  artifactKey: Guid(a7e8b917e9576734f8cd1a1c97f092f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Traint/Free Casual Buttons Pack/Sprites/006 Light Yellow/Button 009.png using Guid(a7e8b917e9576734f8cd1a1c97f092f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b70b0481e6b3cc225df907007a898578') in 0.019053 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Traint/Free Casual Buttons Pack/Sprites/006 Light Yellow/Button 005.png
+  artifactKey: Guid(be6d822221049fc4fa2f67a0e513827b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Traint/Free Casual Buttons Pack/Sprites/006 Light Yellow/Button 005.png using Guid(be6d822221049fc4fa2f67a0e513827b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0651ce0f7ef3a1e7f761694b3fa2087') in 0.017027 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Traint/Free Casual Buttons Pack/Sprites/006 Light Yellow/Button 007.png
+  artifactKey: Guid(f82e63c729924f442b44c3bcc0955a6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Traint/Free Casual Buttons Pack/Sprites/006 Light Yellow/Button 007.png using Guid(f82e63c729924f442b44c3bcc0955a6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84eb14609e04eecbd30a4453e312f782') in 0.023056 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Traint/Free Casual Buttons Pack/Sprites/006 Light Yellow/Button 019.png
+  artifactKey: Guid(1507865c11d440547b472545b600f059) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Traint/Free Casual Buttons Pack/Sprites/006 Light Yellow/Button 019.png using Guid(1507865c11d440547b472545b600f059) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a8d98726c58891a1764761cac79a159') in 0.019217 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.336387 seconds.
+  path: Assets/Traint/Free Casual Buttons Pack/Sprites/007 Light Green/Button 001.png
+  artifactKey: Guid(f896e811553f7df41bde7ad0c513f7ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Traint/Free Casual Buttons Pack/Sprites/007 Light Green/Button 001.png using Guid(f896e811553f7df41bde7ad0c513f7ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0eaaa35e94decfd6c96507152c23866') in 0.018321 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Traint/Free Casual Buttons Pack/Sprites/007 Light Green/Button 007.png
+  artifactKey: Guid(c090b24f29649964fa146fb8e8143d5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Traint/Free Casual Buttons Pack/Sprites/007 Light Green/Button 007.png using Guid(c090b24f29649964fa146fb8e8143d5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f45ef83f12e11c4edf49fe90cd31bce') in 0.018785 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Traint/Free Casual Buttons Pack/Sprites/007 Light Green/Button 017.png
+  artifactKey: Guid(e3f657e42bf2db34ca9e02df9ba51afc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Traint/Free Casual Buttons Pack/Sprites/007 Light Green/Button 017.png using Guid(e3f657e42bf2db34ca9e02df9ba51afc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74a7c98502e9105e148cb9c5d5f2d086') in 0.021153 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Traint/Free Casual Buttons Pack/Sprites/007 Light Green/Button 022.png
+  artifactKey: Guid(8dcaa7a55292567409136ba46925f329) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Traint/Free Casual Buttons Pack/Sprites/007 Light Green/Button 022.png using Guid(8dcaa7a55292567409136ba46925f329) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d7067b7bac0df4e6d266a2d3e59fc8e') in 0.021151 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Traint/Free Casual Buttons Pack/Sprites/007 Light Green/Button 021.png
+  artifactKey: Guid(f2722041512bd054b9cd8f7e81df2241) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Traint/Free Casual Buttons Pack/Sprites/007 Light Green/Button 021.png using Guid(f2722041512bd054b9cd8f7e81df2241) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86f234407e82d43836a342d574d74257') in 0.025503 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Traint/Free Casual Buttons Pack/Sprites/007 Light Green/Button 005.png
+  artifactKey: Guid(927fbb1341e35e34f88d421b1a9848a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Traint/Free Casual Buttons Pack/Sprites/007 Light Green/Button 005.png using Guid(927fbb1341e35e34f88d421b1a9848a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7bdc0b1bf8effe80e97bdf47944006fb') in 0.018717 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.270562 seconds.
+  path: Assets/Traint/Free Casual Buttons Pack/Sprites/008 Light Blue/Button 001.png
+  artifactKey: Guid(4c6988c9a9900f045919ebf9cfd7c7eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Traint/Free Casual Buttons Pack/Sprites/008 Light Blue/Button 001.png using Guid(4c6988c9a9900f045919ebf9cfd7c7eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0f1e2ecc7afde981647b19decb9a526') in 0.017331 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Traint/Free Casual Buttons Pack/Sprites/008 Light Blue/Button 013.png
+  artifactKey: Guid(e2dec78d5d017c44389ffecfa32f5aaa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Traint/Free Casual Buttons Pack/Sprites/008 Light Blue/Button 013.png using Guid(e2dec78d5d017c44389ffecfa32f5aaa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc21f3a5a9ed1ca61d0d95c2a328aeb5') in 0.021740 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Traint/Free Casual Buttons Pack/Sprites/008 Light Blue/Button 016.png
+  artifactKey: Guid(4eec2487d22215a4eb034f057f9d2d27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Traint/Free Casual Buttons Pack/Sprites/008 Light Blue/Button 016.png using Guid(4eec2487d22215a4eb034f057f9d2d27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '096e3f3e6b7728366945c2b8e206a711') in 0.017104 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Traint/Free Casual Buttons Pack/Sprites/008 Light Blue/Button 022.png
+  artifactKey: Guid(d01a5c27c3b405140a432aa222d130fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Traint/Free Casual Buttons Pack/Sprites/008 Light Blue/Button 022.png using Guid(d01a5c27c3b405140a432aa222d130fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d1347718002453b850cf61e82c11e40') in 0.027142 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Traint/Free Casual Buttons Pack/Sprites/008 Light Blue/Button 006.png
+  artifactKey: Guid(9c05cd00799c85243928e9b7a5a6c03f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Traint/Free Casual Buttons Pack/Sprites/008 Light Blue/Button 006.png using Guid(9c05cd00799c85243928e9b7a5a6c03f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '129870fe05e4abda657bebd371629a5e') in 0.020424 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Traint/Free Casual Buttons Pack/Sprites/008 Light Blue/Button 017.png
+  artifactKey: Guid(5bb3a91989743ba49be96c5891c166f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Traint/Free Casual Buttons Pack/Sprites/008 Light Blue/Button 017.png using Guid(5bb3a91989743ba49be96c5891c166f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c158522c992c6f0539165e98f50141a') in 0.019841 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.879697 seconds.
+  path: Assets/Traint/Free Casual Buttons Pack/Sprites/009 Blue/Button 001.png
+  artifactKey: Guid(77ffb7fedfb6d7742a432ec264cdc602) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Traint/Free Casual Buttons Pack/Sprites/009 Blue/Button 001.png using Guid(77ffb7fedfb6d7742a432ec264cdc602) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba1f859f589beaf12d5d8c64b44f7cd8') in 0.016507 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Traint/Free Casual Buttons Pack/Sprites/009 Blue/Button 016.png
+  artifactKey: Guid(4cb1b52be9306414dbd1abe44420c1de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Traint/Free Casual Buttons Pack/Sprites/009 Blue/Button 016.png using Guid(4cb1b52be9306414dbd1abe44420c1de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66c252be1c4db96988f20740d29f7943') in 0.025505 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Traint/Free Casual Buttons Pack/Sprites/009 Blue/Button 009.png
+  artifactKey: Guid(81d09755958c6ff4fbb10edf0bc75836) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Traint/Free Casual Buttons Pack/Sprites/009 Blue/Button 009.png using Guid(81d09755958c6ff4fbb10edf0bc75836) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3cbe0347213031fa3496fc7710dafcd7') in 0.017987 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Traint/Free Casual Buttons Pack/Sprites/009 Blue/Button 023.png
+  artifactKey: Guid(f5a576a7f402e3a40b629a661f987d41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Traint/Free Casual Buttons Pack/Sprites/009 Blue/Button 023.png using Guid(f5a576a7f402e3a40b629a661f987d41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f4f0065883e6aa775018c816537f14b') in 0.022693 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Traint/Free Casual Buttons Pack/Sprites/009 Blue/Button 015.png
+  artifactKey: Guid(9df0ef828dd6bda4288fb3523720bb3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Traint/Free Casual Buttons Pack/Sprites/009 Blue/Button 015.png using Guid(9df0ef828dd6bda4288fb3523720bb3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17b8fa45c44a2fba7a4e268c1eeb081a') in 0.018537 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Traint/Free Casual Buttons Pack/Sprites/009 Blue/Button 021.png
+  artifactKey: Guid(7cf21fa57fc21d8469a5198b7b845b14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Traint/Free Casual Buttons Pack/Sprites/009 Blue/Button 021.png using Guid(7cf21fa57fc21d8469a5198b7b845b14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0b0dda74586fb1d8aa963872a033c62') in 0.016608 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
