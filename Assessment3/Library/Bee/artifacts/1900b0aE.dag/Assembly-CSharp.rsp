@@ -374,6 +374,7 @@
 "Assets/AurynSky/Dungeon Pack/Scripts/TrapDoorDemo.cs"
 "Assets/CherrySpawner.cs"
 "Assets/DeerController.cs"
+"Assets/GameManager.cs"
 "Assets/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Scripts/Antialiasing.cs"
 "Assets/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Scripts/Bloom.cs"
 "Assets/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Scripts/BloomAndFlares.cs"
