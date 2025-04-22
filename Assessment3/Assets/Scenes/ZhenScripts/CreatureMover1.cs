@@ -12,7 +12,7 @@ namespace Controller
         [Header("Movement")]
         [SerializeField] private float m_WalkSpeed = 1f;
         [SerializeField] private float m_RunSpeed = 4f;
-        [SerializeField, Range(0f, 360f)] private float m_RotateSpeed = 10f; // 使用更平滑的角速度
+        [SerializeField, Range(0f, 360f)] private float m_RotateSpeed = 10f;
         [SerializeField] private Space m_Space = Space.Self;
         [SerializeField] private float m_JumpHeight = 5f;
 
@@ -189,7 +189,6 @@ namespace Controller
 
                 m_Controller.Move(displacement);
 
-                // GTA风格：角色朝移动方向平滑转向（加“曲线滑动感”）
                 if (movement.sqrMagnitude > 0.01f)
                 {
                     Quaternion current = m_Transform.rotation;
@@ -269,4 +268,3 @@ namespace Controller
         #endregion
     }
 }
-    

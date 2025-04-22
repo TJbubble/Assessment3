@@ -2,7 +2,7 @@
 
 namespace Controller
 {
-    [RequireComponent(typeof(CreatureMover))]
+    [RequireComponent(typeof(CreatureMover1))] // ✅ 改为新版类名
     public class MovePlayerInput1 : MonoBehaviour
     {
         [Header("Character")]
@@ -14,19 +14,19 @@ namespace Controller
         [Header("Camera")]
         [SerializeField] private Transform m_Camera;
 
-        private CreatureMover m_Mover;
+        private CreatureMover1 m_Mover; // ✅ 改为新版类型
 
         private Vector2 m_Axis;
         private bool m_IsRun;
         private bool m_IsJump;
         private Vector3 m_Target;
 
-        private bool _isMovingForward = true;  // ✅ 替代自动属性
+        private bool _isMovingForward = true;
         public bool IsMovingForward { get { return _isMovingForward; } }
 
         private void Awake()
         {
-            m_Mover = GetComponent<CreatureMover>();
+            m_Mover = GetComponent<CreatureMover1>(); // ✅ 改为新版类名
         }
 
         private void Update()
@@ -56,7 +56,6 @@ namespace Controller
                 Vector3 moveDir = (camRight * h + camForward * v).normalized;
                 m_Target = moveDir.sqrMagnitude > 0.01f ? moveDir : transform.forward;
 
-                // ✅ 更新移动方向状态
                 _isMovingForward = v > 0.01f;
             }
             else
@@ -66,7 +65,7 @@ namespace Controller
             }
         }
 
-        public void BindMover(CreatureMover mover)
+        public void BindMover(CreatureMover1 mover) // ✅ 也同步改名
         {
             m_Mover = mover;
         }
