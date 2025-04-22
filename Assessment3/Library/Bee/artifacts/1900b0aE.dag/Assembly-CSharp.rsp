@@ -349,6 +349,8 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.VSCode.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
+"Assets/AurynSky/Dungeon Pack/Scripts/SpikeTrapDemo.cs"
+"Assets/AurynSky/Dungeon Pack/Scripts/TrapDoorDemo.cs"
 "Assets/CherrySpawner.cs"
 "Assets/DeerController.cs"
 "Assets/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Scripts/Antialiasing.cs"
@@ -395,9 +397,6 @@
 "Assets/P2Animals/Animals_FREE/Scripts/ThirdPersonCamera.cs"
 "Assets/Quirky Series Ultimate/_Scripts/QuirkySeriesDemo.cs"
 "Assets/Quirky Series Ultimate/_Scripts/RotateOnScroll.cs"
-<<<<<<< HEAD
-"Assets/ThirdPersonCameraController.cs"
-=======
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01_UGUI.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark02.cs"
@@ -432,7 +431,7 @@
 "Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs"
->>>>>>> f2c69ea36b37af1dcd11dbed44bd2a9671dda420
+"Assets/ThirdPersonCameraController.cs"
 -langversion:9.0
 
 /deterministic
