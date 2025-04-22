@@ -2,80 +2,42 @@
 
 namespace Controller
 {
-    [RequireComponent(typeof(CreatureMover1))] // ✅ 改为新版类名
+    [RequireComponent(typeof(CreatureMover1))]
     public class MovePlayerInput1 : MonoBehaviour
     {
-        [Header("Character")]
-        [SerializeField] private string m_HorizontalAxis = "Horizontal";
-        [SerializeField] private string m_VerticalAxis = "Vertical";
-        [SerializeField] private string m_JumpButton = "Jump";
-        [SerializeField] private KeyCode m_RunKey = KeyCode.LeftShift;
+        [Header("Character Settings")]
+        public string horizontal = "Horizontal";
+        public string vertical   = "Vertical";
+        public string jumpButton = "Jump";
+        public KeyCode sprintKey = KeyCode.LeftShift;
 
         [Header("Camera")]
-        [SerializeField] private Transform m_Camera;
+        public Transform cam;
 
-        private CreatureMover1 m_Mover; // ✅ 改为新版类型
+        private CreatureMover1 mover;
+        private Vector2 axis;
+        private bool isJumping, isSprinting;
 
-        private Vector2 m_Axis;
-        private bool m_IsRun;
-        private bool m_IsJump;
-        private Vector3 m_Target;
-
-        private bool _isMovingForward = true;
-        public bool IsMovingForward { get { return _isMovingForward; } }
-
-        private void Awake()
+        void Awake()
         {
-            m_Mover = GetComponent<CreatureMover1>(); // ✅ 改为新版类名
+            mover = GetComponent<CreatureMover1>();
         }
 
-        private void Update()
+        void Update()
         {
-            GatherInput();
-            SetInput();
-        }
+            float h = Input.GetAxis(horizontal);
+            float v = Input.GetAxis(vertical);
+            axis = new Vector2(h, v);
 
-        public void GatherInput()
-        {
-            float h = Input.GetAxis(m_HorizontalAxis);
-            float v = Input.GetAxis(m_VerticalAxis);
-            m_Axis = new Vector2(h, v);
-            m_IsRun = Input.GetKey(m_RunKey);
-            m_IsJump = Input.GetButton(m_JumpButton);
+            isSprinting = Input.GetKey(sprintKey); // 检查是否按下冲刺键
+            isJumping = Input.GetButtonDown(jumpButton); // 检查是否按下跳跃键
 
-            if (m_Camera != null)
-            {
-                Vector3 camForward = m_Camera.forward;
-                Vector3 camRight = m_Camera.right;
+            // 根据摄像机旋转，计算角色的移动方向
+            Vector3 forward = cam.forward; forward.y = 0; forward.Normalize();
+            Vector3 right   = cam.right;   right.y   = 0; right.Normalize();
+            Vector3 direction = (right * h + forward * v).normalized;
 
-                camForward.y = 0f;
-                camRight.y = 0f;
-                camForward.Normalize();
-                camRight.Normalize();
-
-                Vector3 moveDir = (camRight * h + camForward * v).normalized;
-                m_Target = moveDir.sqrMagnitude > 0.01f ? moveDir : transform.forward;
-
-                _isMovingForward = v > 0.01f;
-            }
-            else
-            {
-                m_Target = transform.forward;
-                _isMovingForward = true;
-            }
-        }
-
-        public void BindMover(CreatureMover1 mover) // ✅ 也同步改名
-        {
-            m_Mover = mover;
-        }
-
-        public void SetInput()
-        {
-            if (m_Mover != null)
-            {
-                m_Mover.SetInput(in m_Axis, in m_Target, in m_IsRun, m_IsJump);
-            }
+            mover.SetInput(axis, direction, isSprinting, isJumping);
         }
     }
 }
